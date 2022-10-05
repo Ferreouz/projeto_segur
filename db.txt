@@ -1,0 +1,32 @@
+CREATE DATABASE segur;
+use segur; 
+CREATE TABLE `tabela_os` (
+  `id_os` int NOT NULL AUTO_INCREMENT,
+  `diretoria` varchar(512) DEFAULT NULL,
+  `data1` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
+  `empresa` varchar(512) DEFAULT NULL,
+  `responsavel` varchar(512) DEFAULT NULL,
+  `n_equipe` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_os`)
+) CHARSET=utf8mb4;
+
+CREATE TABLE `tabela_risco` (
+  `id_risco` int NOT NULL AUTO_INCREMENT,
+  `id_os` int NOT NULL,
+  `risco` varchar(512) DEFAULT NULL,
+  `desc_risco` varchar(2048) DEFAULT NULL,
+  `medidas_correcao` varchar(2048) DEFAULT NULL,
+  `gradacao` varchar(512) DEFAULT NULL,
+  `fator_risco` varchar(512) DEFAULT NULL,
+  PRIMARY KEY (`id_risco`)
+)CHARSET=utf8mb4;
+
+CREATE TABLE `tabela_fotos` (
+  `id_fotos` int NOT NULL AUTO_INCREMENT,
+  `id_os` int NOT NULL,
+  `id_risco` int NOT NULL,
+  `nome_foto` varchar(80) NOT NULL,
+  `desc_foto` varchar(2048) DEFAULT NULL,
+  PRIMARY KEY (`id_fotos`)
+)CHARSET=utf8mb4;

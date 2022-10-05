@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fundo.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+#container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40%;
+    border-radius: 16px;
+    background-color: rgba(10, 16, 27, 0.534);
+    box-shadow: 3px 3px 6px,
+        -1px -1px 6px rgba(221, 221, 221, 0.219);
+    border: 1px solid rgba(69, 69, 69, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* input do usuario  */
+input {
+
+    margin-left: 2%;
+    width: 100%;
+    padding: 1em 5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+}
+
+/* input da senha  */
+.password {
+
+    width: 100%;
+    padding: 1em 5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+/* input do login  */
+.submit {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (max-width: 200px) {
+    #container {
+        display: flex;
+        width: 70%;
+        height: 50%;
+
+    }
+
+    .usuario {
+        display: flex;
+        height: 1.5em;
+        width: 12em;
+        padding: 1em 1.3em;
+        margin: 0.5em 0;
+        box-sizing: border-box;
+        border-radius: 0.3em;
+
+    }
+}
+
+@media only screen and (min-width: 200px) {
+    #container {
+        display: flex;
+        width: 80%;
+        height: 50%;
+
+    }
+
+    .usuario {
+        display: flex;
+        height: 1.5em;
+        width: 2em;
+        padding: 1em 1.3em;
+        margin: 0.5em 0;
+        box-sizing: border-box;
+        border-radius: 0.3em;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    #container {
+        width: 80%;
+        height: 60%;
+    }
+
+    input.usuario {
+        width: 10%;
+        height: 45px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    #container {
+        width: 70%;
+        height: 60%;
+    }
+
+    input.usuario {
+        width: 70%;
+
+        height: 45px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #container {
+        width: 90%;
+        height: 60%;
+    }
+
+    input.usuario {
+        width: 80%
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #container {
+        height: 60%;
+        width: 80%;
+    }
+
+    .usuario {
+        width: 90%
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #container {
+        height: 70%;
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    #container {
+        width: 80%;
+        height: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    #container {
+        width: 80%;
+        height: 60%;
+    }
+
+    input {
+        height: 3em;
+        width: 65em;
+    }
+
+    .password {
+        height: 3em;
+        width: 65em;
+    }
+}
+
+
+@media only screen and (min-width: 1800px) {
+    #container {
+        width: 50%;
+        height: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 2200px) {
+    #container {
+        width: 50%;
+        height: 60%;
+    }
+
+    input {
+        height: 3em;
+        width: 65em;
+    }
+
+    .password {
+        height: 3em;
+        width: 65em;
+    }
+}
+
+
+
+@media only screen and (min-width: 2400px) {
+    #container {
+        width: 50%;
+        height: 60%;
+    }
+
+    input {
+        height: 3em;
+        width: 65em;
+    }
+
+    .password {
+        height: 3em;
+        width: 65em;
+    }
+}
+
+@media only screen and (min-width: 2600px) {
+    #container {
+        width: 50%;
+        height: 60%;
+    }
+
+    input {
+        height: 3em;
+        width: 65em;
+    }
+
+    .password {
+        height: 3em;
+        width: 65em;
+    }
+}
+
+
+@media only screen and (min-width: 2800px) {
+    #container {
+        width: 50%;
+        height: 60%;
+    }
+
+    input {
+        height: 3em;
+        width: 65em;
+    }
+
+    .password {
+        height: 3em;
+        width: 65em;
+    }
+}

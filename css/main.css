@@ -1,0 +1,103 @@
+:root {
+  --time: 0s;
+}
+
+body {
+  z-index: 0;
+  font-size: 1.3em;
+  line-height: 1.7;
+  color: rgb(92, 92, 92);
+  background-size: cover;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(129, 221, 244);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  background-color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  padding: 2rem;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.center {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.erro {
+  color: red;
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: right;
+}
+
+.sucesso {
+  color: green;
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: right;
+}
+
+/* Menu bar*/
+
+.menu-img {
+  border: none;
+  cursor: pointer;
+  max-width: 3.5rem;
+  mix-blend-mode: color-burn;
+  position: relative;
+  z-index: 3;
+  top: 2%;
+
+}
+
+.drawer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: aliceblue;
+  height: 120vh;
+  width: 65vh;
+  z-index: 2;
+  box-sizing: border-box;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, .6);
+  border-radius: 8px;
+}
+
+.drawer.voltar {
+  animation: voltar .4s linear forwards;
+}
+
+.drawer.sumir {
+  animation: sumir var(--time) linear forwards;
+}
+
+@keyframes sumir {
+  to {
+    transform: translateX(-70vh);
+  }
+}
+
+@keyframes voltar {
+  to {
+    transform: translateX(0vh);
+  }
+}
+
+.drawer-son {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+}
