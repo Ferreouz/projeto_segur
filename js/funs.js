@@ -109,3 +109,7 @@ function destroyMSG(){
     if (mensagem != null)
         document.getElementById("container").removeChild(mensagem)  
 }
+function checkCookie(){
+    let v = document.cookie.split(';').some(item=>item.trim().startsWith('os='))
+    return v
+}

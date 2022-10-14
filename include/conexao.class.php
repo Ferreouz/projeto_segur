@@ -1,8 +1,8 @@
 <?php
-$host = "";
-$user = "";
+$host = "localhost";
+$user = "root";
 $senha = "";
-$db = "segur";
+$db = "";
 $port = "";
 
 

@@ -2,6 +2,8 @@
 /*
 Puxar cada risco do banco de acordo com o numero da os; Gerando um pdf com todas informações e imagens
 */
+require_once '../login/verificaLogin.php';
+
 if(!$_POST['id_pdf']){    
     header("Location: ../home");
     exit;

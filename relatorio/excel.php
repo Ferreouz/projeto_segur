@@ -1,7 +1,9 @@
 <?php
+
 /*
 Imprimir relatorio em tabela de excel, baseado em parametros de data
 */
+require_once '../login/verificaLogin.php';
 require_once '../include/conexao.class.php';
 require_once '../include/functions.php';
 

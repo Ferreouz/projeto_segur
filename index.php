@@ -7,13 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        .erro {
+        color: red;
+        margin: 0;
+        top :80%;
+        font-size: 1rem;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+}
+    </style>
 </head>
 
 <body>
     <div id="container">
-        <form class="center">
+        <form class="center" action="login/login.php" method="post">
             <div class="center">
-                <input type="text" name="email" id="usuario" placeholder="Digite seu usuario">
+                <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuario">
             </div>
             <div class="center">
 
@@ -22,13 +33,15 @@
 
             </div>
             <div class="center">
-                <a class="submit" href="home.html">
-                    Login
-                </a>
+                <input type="submit" class="submit" value="Login">
             </div>
         </form>
 
-
+        <?php
+        include_once 'include/functions.php';
+        if(isset($_GET['erro']))
+        echo "<p class='erro'>Erro:".clean($_GET['erro'])."</p>" ; 
+        ?>
     </div>
 </body>
 

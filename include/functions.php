@@ -16,4 +16,13 @@ function clean($s,$string=TRUE){
         $filtro = '/[a-zA-Z!@#$%^&*()\"\'\\/;=<>|.,?]/';
             
     return trim(htmlspecialchars(preg_replace($filtro, '',$s),ENT_QUOTES, 'UTF-8'));
-}   
+}
+function hashIt($string,$salt){
+    $hash = $salt . $string . $salt;
+    return hash('sha256', $hash);
+}
+function createRandom(){
+    //Cria um numero aleatorio entre 100000 e 999999
+    $random = random_int(100000,999999);
+    return $random;
+}

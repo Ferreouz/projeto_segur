@@ -2,6 +2,7 @@
 /*
 Buscar no banco pelo cookie e retorna JSON para o javascript
  */
+require_once 'login/verificaLogin.php';
 require_once 'include/conexao.class.php';
 require_once 'include/response.class.php';
 require_once 'include/functions.php';

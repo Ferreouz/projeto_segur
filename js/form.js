@@ -19,7 +19,7 @@ form.addEventListener('submit', function(evt){
     })
 })
 //pelos cookie "voltar" a sessao anterior
-if (document.cookie != ""){
+if (checkCookie()){
     fetch("cookie.php")
     .then(resposta => resposta.json())
     .then(data=>{

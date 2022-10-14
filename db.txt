@@ -30,3 +30,11 @@ CREATE TABLE `tabela_fotos` (
   `desc_foto` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id_fotos`)
 )CHARSET=utf8mb4;
+
+CREATE TABLE `tabela_login` (
+  `matricula` int NOT NULL,
+  `nome` varchar(2048) NOT NULL,
+  `senha` varchar(2048) NOT NULL,
+  `random` int NOT NULL,
+  PRIMARY KEY (`matricula`)
+)CHARSET=utf8mb4;

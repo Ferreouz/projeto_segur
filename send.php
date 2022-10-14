@@ -1,7 +1,8 @@
 <?php
 /*
 Enviar para o banco FORM e os arquivo e retorna para os campos serem preenchidos
- */
+*/
+require_once 'login/verificaLogin.php';
 require_once 'include/conexao.class.php';
 require_once 'include/file.class.php';
 require_once 'include/response.class.php';
